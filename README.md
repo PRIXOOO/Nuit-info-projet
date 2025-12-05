@@ -1,27 +1,20 @@
-
-## Lien pour accéder au site :
-http://88.174.229.181:33768/
-
----
-
-## 🛠️ Technologies utilisées
-
-- **HTML5** - Structure de l'application
-- **CSS3** - Design et mise en page
-- **JavaScript** - Interactivité
-- **Nodejs** - UI/UX
-- **Python** - LLM
-- LLM Utilisé : Gemma3-1B 
----
-
-## 📅 Contexte
-
-La **Nuit de l'Info** est un événement annuel qui se déroule le premier jeudi de décembre [web:2]. L'édition 2024 a rassemblé **6 027 participants** répartis en **904 équipes** sur **72 sites** en France [web:8].
-
----
-
 <div align="center">
-
-**Fait avec ❤️ pendant la Nuit de l'Info 2024**
-
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
+
+# Run and deploy your AI Studio app
+
+This contains everything you need to run your app locally.
+
+View your app in AI Studio: https://ai.studio/apps/temp/1
+
+## Run Locally
+
+**Prerequisites:**  Node.js
+
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`

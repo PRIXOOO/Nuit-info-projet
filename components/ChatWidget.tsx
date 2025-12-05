@@ -250,7 +250,7 @@ const ChatWidget: React.FC<ChatWidgetProps> = ({ user }) => {
     const hasUserSentMessage = messages.some(m => m.sender === 'user');
 
     return (
-        <div className="fixed bottom-8 right-8 z-50 flex flex-col items-end pointer-events-auto font-sans">
+        <div className="fixed bottom-8 right-8 z-50 flex flex-col items-end pointer-events-none font-sans">
             
             {/* Fenêtre de Chat */}
             <div 
@@ -270,7 +270,7 @@ const ChatWidget: React.FC<ChatWidgetProps> = ({ user }) => {
             >
                 {/* Modale À Propos (Superposée à l'intérieur du Chat) */}
                 {showAboutModal && (
-                    <div className="absolute inset-0 z-[100] bg-slate-900/10 backdrop-blur-sm flex items-center justify-center p-6 animate-fade-in">
+                    <div className="absolute inset-0 z-[100] bg-slate-900/10 backdrop-blur-sm flex items-center justify-center p-6 animate-fade-in pointer-events-auto">
                          <div className="bg-white w-full shadow-2xl rounded-3xl p-6 border border-slate-100 relative transform transition-all animate-scale-in">
                              <button 
                                 onClick={() => setShowAboutModal(false)}
@@ -493,7 +493,7 @@ const ChatWidget: React.FC<ChatWidgetProps> = ({ user }) => {
             </div>
 
             {/* Bouton Launcher */}
-            <div className="relative group flex items-center justify-center">
+            <div className="relative group flex items-center justify-center pointer-events-auto">
                 {/* Paillettes - seulement au survol (group-hover) */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
                     {!isOpen && sparks.map((spark) => (

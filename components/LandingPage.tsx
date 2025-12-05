@@ -101,7 +101,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onNavigate, user, onLogout })
 
       {/* Navbar Modernisée */}
       <nav className={`
-        fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out
+        fixed top-0 left-0 right-0 z-[60] transition-all duration-500 ease-in-out
         ${scrolled ? 'bg-white/90 backdrop-blur-xl border-b border-slate-200/50 py-3 shadow-sm' : 'bg-transparent border-transparent py-6'}
       `}>
         <div className="max-w-[1400px] mx-auto px-6 flex items-center justify-between">

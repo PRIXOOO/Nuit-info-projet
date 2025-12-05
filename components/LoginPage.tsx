@@ -50,7 +50,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess, onNavigate, onBac
       {/* Bouton Fermer pour revenir à la page précédente */}
       <button 
         onClick={onBack}
-        className="absolute top-6 right-6 z-50 p-2.5 rounded-full bg-slate-50 border border-slate-100 hover:bg-slate-100 text-slate-400 hover:text-slate-800 transition-all shadow-sm"
+        className="absolute top-6 right-6 z-[60] p-2.5 rounded-full bg-slate-50 border border-slate-100 hover:bg-slate-100 text-slate-400 hover:text-slate-800 transition-all shadow-sm"
         title="Retour"
       >
         <XIcon className="w-6 h-6" />
