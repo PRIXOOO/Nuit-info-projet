@@ -9,8 +9,10 @@
 ### 🔗 [Accéder au projet en ligne](http://88.174.229.181:33768/)
 
 </div>
----
-## PS: si vous taper "Chat'bruti + [message]" un nouveau s'ouvrira a vous 
+
+
+## INFO:
+- PS: si vous taper "Chat'bruti + [message]" un nouveau s'ouvrira a vous 
 
 ---
 
