@@ -15,7 +15,7 @@
 
 
 ## INFO:
-- PS: si vous taper "Chat'bruti + [message]" un nouveau monde s'ouvrira a vous 
+- PS: si vous tapez "Chat'bruti + [message]" un nouveau monde s'ouvrira a vous 
 
 
 ---
