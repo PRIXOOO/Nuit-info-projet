@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viveris | Innover. Simplifier. Partager.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              viveris: {
+                red: "#E30613",
+                dark: "#0F172A",
+                light: "#F8FAFC",
+                accent: "#FF5252"
+              }
+            },
+            boxShadow: {
+              'apple': '0 8px 30px rgba(0,0,0,0.04)',
+              'apple-hover': '0 20px 40px rgba(0,0,0,0.08)',
+              'glass': '0 4px 30px rgba(0, 0, 0, 0.1)',
+              'neon': '0 0 20px rgba(255, 255, 255, 0.5), 0 0 40px rgba(252, 165, 165, 0.4)',
+            },
+            backgroundImage: {
+              'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+              'slide-up': 'slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+              'scale-in': 'scaleIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+              'spin-slow': 'spin 8s linear infinite',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              slideUp: {
+                '0%': { transform: 'translateY(40px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              },
+              scaleIn: {
+                '0%': { transform: 'scale(0.95)', opacity: '0' },
+                '100%': { transform: 'scale(1)', opacity: '1' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        margin: 0;
+        background-color: #F8FAFC;
+        color: #0F172A;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      /* Custom Scrollbar for elegance */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #CBD5E1;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94A3B8;
+      }
+
+      /* Spark Animation */
+      @keyframes sparkle-drop {
+        0% {
+          opacity: 0;
+          transform: rotate(var(--rotate-deg)) translate(var(--radius)) scale(0);
+        }
+        20% {
+          opacity: 1;
+          transform: rotate(var(--rotate-deg)) translate(var(--radius)) scale(1);
+        }
+        100% {
+          opacity: 0;
+          /* Rotation continue + chute vers le bas (ty) */
+          transform: rotate(calc(var(--rotate-deg) + 40deg)) translate(var(--radius)) translateY(30px) scale(0);
+        }
+      }
+      
+      .spark {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 4px;
+        height: 4px;
+        background: white;
+        border-radius: 50%;
+        box-shadow: 0 0 10px #FCA5A5, 0 0 5px white;
+        animation: sparkle-drop 2s ease-in-out infinite;
+        pointer-events: none;
+      }
+
+      /* --- Animation Avion "OxygenOS Style" (Contenu dans le rond) --- */
+      /* Effet physique : Recul (anticipation) -> Accélération -> Stabilisation */
+      @keyframes flight-takeoff {
+        0% { 
+          transform: translate(0, 0) rotate(0deg) scale(1); 
+        }
+        20% { 
+          /* Anticipation : L'avion recule légèrement en bas à gauche et se contracte */
+          transform: translate(-3px, 3px) rotate(-10deg) scale(0.85); 
+        }
+        50% { 
+          /* Décollage : Propulsion vers le haut à droite, rotation dynamique */
+          transform: translate(6px, -6px) rotate(45deg) scale(1.15); 
+        }
+        70% { 
+          /* Ralentissement : Dépassement léger de la cible */
+          transform: translate(2px, -2px) rotate(5deg) scale(1.05); 
+        }
+        100% { 
+          /* Retour au calme */
+          transform: translate(0, 0) rotate(0deg) scale(1); 
+        }
+      }
+
+      /* Application de l'animation */
+      .fly-takeoff { 
+        animation: flight-takeoff 1.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; 
+      }
+
+      /* Animation Poussière -> Texte (Disparition) */
+      @keyframes turn-to-dust {
+        0% {
+          opacity: 1;
+          filter: blur(0px);
+          transform: scale(1) translateX(0);
+          letter-spacing: normal;
+        }
+        100% {
+          opacity: 0;
+          filter: blur(10px);
+          transform: scale(1.5) translateX(20px) translateY(-10px);
+          letter-spacing: 15px;
+        }
+      }
+
+      .dust-effect {
+        animation: turn-to-dust 0.8s ease-out forwards;
+        display: inline-block;
+        white-space: nowrap;
+        transform-origin: left center;
+      }
+
+      /* Animation Poussière -> Texte (Assemblage/Apparition) */
+      @keyframes dust-assemble {
+        0% {
+          opacity: 0;
+          filter: blur(15px);
+          transform: scale(1.5) translateY(10px);
+          letter-spacing: 15px;
+        }
+        60% {
+          opacity: 0.8;
+          filter: blur(4px);
+          letter-spacing: 2px;
+        }
+        100% {
+          opacity: 1;
+          filter: blur(0);
+          transform: scale(1) translateY(0);
+          letter-spacing: normal;
+        }
+      }
+
+      .dust-assembly-effect {
+        animation: dust-assemble 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        display: inline-block; /* Important pour que les transfos fonctionnent */
+        transform-origin: center center;
+      }
+
+      /* Bulle apparition simple (pour le conteneur) */
+      @keyframes message-pop {
+        0% { opacity: 0; transform: translateY(10px) scale(0.95); }
+        100% { opacity: 1; transform: translateY(0) scale(1); }
+      }
+      
+      .message-container-appear {
+        animation: message-pop 0.3s ease-out forwards;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
+    "vite": "https://aistudiocdn.com/vite@^7.2.6",
+    "path": "https://aistudiocdn.com/path@^0.12.7"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
