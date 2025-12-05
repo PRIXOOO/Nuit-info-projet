@@ -9,9 +9,9 @@ http://88.174.229.181:33768/
 - **HTML5** - Structure de l'application
 - **CSS3** - Design et mise en page
 - **JavaScript** - Interactivité
--- **Nodejs** - UI/UX
--- **Python** - LLM
-LLM Utilisé : Gemma3-1B 
+- **Nodejs** - UI/UX
+- **Python** - LLM
+- LLM Utilisé : Gemma3-1B 
 ---
 
 ## 📅 Contexte
