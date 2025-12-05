@@ -1,5 +1,4 @@
-# 🌊 Nuit de l'Info 2024 - Et si l'océan était un corps humain ?
-
+# 🌊 Nuit de l'Info 2025
 <div align="center">
 
 ![Nuit de l'Info](https://img.shields.io/badge/Nuit%20de%20l'Info-2025-blue?style=for-the-badge)
