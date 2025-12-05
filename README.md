@@ -26,6 +26,31 @@
 - **Node.js** - UI/UX , sécurité
 - LLM : Gemma3-1B
 
+# 🌙 Nuit de l'Info 2025 - Chat'bruti + AJIR
+
+> Projet réalisé lors de la Nuit de l'Info 2025
+
+## 🎯 Défis relevés
+
+- **Défi AJIR** : Création d'une plateforme engageante avec UX soignée et gamification
+- **Défi Viveris** : Refonte du site avec un chatbot (et une petite surprise dedans)
+
+## 🚀 Fonctionnalités
+
+- Interface intuitive et accessible
+- Système de gamification (badges, progression, défis)
+- Calls-to-action interactifs
+- Design responsive
+
+
+## 📦 Installation
+node.js
+python
+tensorflow
+pytorch
+huggingface
+npm
+
 
 <div align="center">
 
