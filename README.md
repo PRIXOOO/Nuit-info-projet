@@ -10,6 +10,9 @@
 
 </div>
 ---
+## PS: si vous taper "Chat'bruti + [message]" un nouveau s'ouvrira a vous 
+
+---
 
 ## 🛠️ Technologies utilisées
 
