@@ -16,14 +16,10 @@
 - **HTML5** - Structure de l'application
 - **CSS3** - Design et mise en page
 - **JavaScript** - Interactivité
+- **Python** - Utilisation d'LLM
+- **Node.js** - UI/UX , sécurité
+- LLM : Gemma3-1B
 
----
-
-## 📅 Contexte
-
-La **Nuit de l'Info** est un événement annuel qui se déroule le premier jeudi de décembre [web:2]. L'édition 2024 a rassemblé **6 027 participants** répartis en **904 équipes** sur **72 sites** en France [web:8].
-
----
 
 <div align="center">
 
