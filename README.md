@@ -51,6 +51,25 @@ pytorch
 huggingface
 npm
 
+## 🎯 Objectifs
+
+- 🌍 **Sensibiliser** à l'importance de la préservation des océans
+- 🧠 **Éduquer** sur les liens entre l'océan et le corps humain
+- 💡 **Inspirer** une prise de conscience collective
+- 🤝 **Encourager** les actions pour protéger notre environnement
+
+---
+
+## 👥 L'équipe
+
+| Membre | GitHub |
+|--------|--------|
+| **Walid Kebbache** | [@PRIXOOO](https://github.com/PRIXOOO) |
+| **Moustapha Makanera** | - |
+| **Marwane Benhadj-Amar** | - |
+| **Gabriel Fontaine** | - |
+
+---
 
 <div align="center">
 
