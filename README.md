@@ -8,15 +8,22 @@
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
-
 ### 🔗 [Accéder au projet en ligne](http://88.174.229.181:33768/)
 
 </div>
 
-
 ## INFO:
 - PS: si vous tapez "Chat'bruti + [message]" un nouveau monde s'ouvrira a vous 
 
+---
+
+## 🎬 Démonstrations
+
+### Mode normal
+![Démo normale](DEMO_VIVERIS_NORMAL.gif)
+
+### Mode Chat'bruti 🤖
+![Démo Chat'bruti](DEMO_VIVERIS_CHATBRUTI.gif)
 
 ---
 
@@ -44,7 +51,6 @@
 - Système de gamification (badges, progression, défis)
 - Calls-to-action interactifs
 - Design responsive
-
 
 ## 📦 Installation
 node.js
@@ -76,6 +82,6 @@ npm
 
 <div align="center">
 
-**Fait avec ❤️ pendant la Nuit de l'Info 2024**
+**Fait avec ❤️ pendant la Nuit de l'Info 2025**
 
 </div>
