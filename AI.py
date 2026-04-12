@@ -9,10 +9,10 @@ from pydantic import BaseModel
 # --- CONFIGURATION GPU ---
 device = "cuda" if torch.cuda.is_available() else "cpu"
 if device == "cuda":
-    print(f"✅ GPU détecté : {torch.cuda.get_device_name(0)}")
+    print(f"GPU détecté : {torch.cuda.get_device_name(0)}")
     torch_dtype = torch.bfloat16 if torch.cuda.get_device_capability()[0] >= 8 else torch.float16
 else:
-    print("⚠️ Aucun GPU détecté. Inférence sur CPU (lent).")
+    print("Aucun GPU détecté. Inférence sur CPU (lent).")
     torch_dtype = torch.float32
 
 # --- IMPORTS MODÈLE ---
@@ -26,9 +26,9 @@ try:
         torch_dtype=torch_dtype,
         device_map="auto"
     )
-    print("✅ Modèle chargé avec succès !")
+    print("Modèle chargé avec succès !")
 except Exception as e:
-    print(f"❌ Erreur: {e}")
+    print(f"Erreur: {e}")
     model = None
     tokenizer = None
 
