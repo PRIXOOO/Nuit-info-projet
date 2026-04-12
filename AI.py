@@ -179,9 +179,9 @@ async def chat_stupide(request: ChatRequest):
 
 # --- LANCEMENT ---
 if __name__ == "__main__":
-    print("🚀 Serveur démarré !")
-    print("➡️  Mode Intelligent : http://localhost:40000/int")
-    print("➡️  Mode Débile      : http://localhost:40000/stup")
+    print("Serveur démarré !")
+    print("Mode Intelligent : http://localhost:40000/int")
+    print("Mode Débile      : http://localhost:40000/stup")
     
     # ICI : Host reste l'IP, on ne met pas de chemin (/stup) ici
     uvicorn.run(app, host="0.0.0.0", port=40000)
